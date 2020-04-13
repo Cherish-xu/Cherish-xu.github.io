@@ -892,7 +892,6 @@ html {
     z-index: 999 ;
 } */
 .left-col {
-    /* background:#fff; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), 
     rgba(255, 255, 255, 0.5)),
     url('http://bucket836.oss-cn-shenzhen.aliyuncs.com/wallpaper/381535373.jpeg') no-repeat 0% 20%/ cover;
