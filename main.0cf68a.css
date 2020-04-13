@@ -332,8 +332,12 @@ body {
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     url('./111.jpg') no-repeat 0% 0%/ cover;
+    cursor:url('https://oss.yansheng.xyz/ico/cursor.ico'), default;
 }
-
+/* 这一块也是加的 */
+a {
+    cursor:url('https://oss.yansheng.xyz/ico/cursor.ico'), default;
+}
 
 
 article,
@@ -1313,9 +1317,18 @@ pre .id {
     font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
 }
 
-.tagcloud a:hover {
+/* .tagcloud a:hover {
     opacity: .8
+} */
+.tagcloud a:hover {
+    color:#fff;
+    opacity:.8
 }
+    
+    
+
+
+
 
 .tagcloud a:before {
     content: " ";
@@ -1409,11 +1422,29 @@ pre .id {
     float: left
 }
 
-.archive-article-date {
+/* .archive-article-date {
     color: #999;
     margin-right: 7.6923%;
     float: right
+} */
+/* 日期栏（如果是文章还包含卜算子的页面访问量） */
+.archive-article-date {
+    /* color:#0087ca; */
+    color:#4b4949;
+    margin-right:7.6923%;
+    float:right
 }
+/* 日期 */
+.archive-article-date time{
+    color:#4b4949;
+}
+/* 日期同一行的文章阅读数量 */
+.archive-article-date[id=busuanzi_container_page_pv] {
+    color:#4b4949;
+}
+
+
+
 
 .archive-article-date .icon {
     margin: 5px 5px 5px 0
@@ -1724,13 +1755,23 @@ pre .id {
     opacity: 1
 }
 
-.archives-wrap {
+/* .archives-wrap {
     position: relative;
     margin: 0 30px;
     padding-right: 60px;
     border-bottom: 1px solid #eee;
     background: #fff
+} */
+.archives-wrap {
+    position:relative;
+    margin:0 30px;
+    padding-right:60px;
+    border-bottom:1px solid #eee;
+    /* background:#fff */
+    background: rgba(255,255,255,.5);
 }
+
+
 
 .archives-wrap:first-child {
     margin-top: 30px
@@ -1779,7 +1820,7 @@ pre .id {
     border-bottom: none
 }
 
-.archives .archive-article-title {
+/* .archives .archive-article-title {
     font-size: 16px;
     color: #333;
     transition: color .3s
@@ -1787,7 +1828,25 @@ pre .id {
 
 .archives .archive-article-title:hover {
     color: #657b83
+} */
+/* 修改： */
+/* 分类页面的标题 */
+.archives .archive-article-title {
+    font-size:20px;
+    /* color:#333; */
+    transition:color .3s
 }
+.archives .archive-article-title:hover {
+    /* color:#657b83 */
+}
+a.share-outer:hover::after {
+    transform: scaleX(0);
+}
+
+
+
+
+
 
 .archives .archive-article-title span {
     display: block;
@@ -1842,13 +1901,21 @@ pre .id {
     font-size: 14px
 }
 
-.archive-article-inner .article-meta .archive-article-date {
+/* .archive-article-inner .article-meta .archive-article-date {
     cursor: default;
     font-size: 12px;
     margin-bottom: 5px;
     margin-top: -10px;
     margin-right: 0
+} */
+.archive-article-inner .article-meta .archive-article-date {
+    cursor:default;
+    font-size:15px;
+    margin-bottom:5px;
+    margin-top:-10px;
+    margin-right:0
 }
+
 
 .archive-article-inner .article-meta .article-category:before {
     float: left;
@@ -2210,9 +2277,15 @@ pre .id {
     z-index: 1
 }
 
-.article-meta time {
+/* .article-meta time {
     color: #aaa
+} */
+.article-meta time {
+    /* color:#aaa */
+    color: #2f2d2a;
 }
+
+
 
 .article-meta time .icon-clock {
     margin-right: 8px;
@@ -2235,9 +2308,15 @@ pre .id {
     transition: background .3s
 }
 
-.article-more-link a:hover {
+/* .article-more-link a:hover {
     background: #3c3c3c
+} */
+/* 防止鼠标悬浮时，变色，因为会被全局的超链接样式影响 */
+.article-more-link a:hover{
+    color:#fff;
 }
+
+
 
 .article-more-link a.hidden {
     visibility: hidden
@@ -2521,9 +2600,10 @@ pre .id {
     transition: color .3s
 }
 
+/* 此处修改了  注释的那一行 */
 #article-nav .article-nav-link-wrap:hover .article-nav-title,
 #article-nav .article-nav-link-wrap:hover i {
-    color: #4d4d4d
+    /* color: #4d4d4d */
 }
 
 #article-nav #article-nav-older {
@@ -3404,13 +3484,24 @@ pre .id {
         z-index: 2;
         color: #424242
     }
-    #mobile-nav .overlay {
+    /* #mobile-nav .overlay {
         height: 110px;
         position: absolute;
         width: 100%;
         z-index: 2;
         background: #4d4d4d;
+    } */
+    #mobile-nav .overlay {
+        height:110px;
+        position:absolute;
+        width:100%;
+        z-index:2;
+         /* 渐变：浅绿色变淡蓝色 */
+        background-image: linear-gradient(#8fecc5,#0badf7);
+        /* 浏览器不支持渐变时显示默认颜色 */
+        background-color: #4d4d4d;
     }
+
     #mobile-nav #header {
         padding: 10px 0 0
     }
@@ -3905,6 +3996,9 @@ a.pswp__share--download:hover {
         margin: 0;
         float: right
     }
+    /* body {
+		background: url('./手机端.jpg') no-repeat fixed top;
+    } */
 }
 
 @-webkit-keyframes clockwise {
