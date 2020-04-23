@@ -330,7 +330,7 @@ body {
     color:#333;
     /* background-color:#fff; */
     min-height:100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
     url('./111.jpg') no-repeat 0% 0%/ cover;
     cursor:url('https://oss.yansheng.xyz/ico/cursor.ico'), default;
 }
@@ -908,7 +908,7 @@ html {
     z-index: 999 ;
 } */
 .left-col {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), 
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.5)),
     url('http://bucket836.oss-cn-shenzhen.aliyuncs.com/wallpaper/381535373.jpeg') no-repeat 0% 20%/ cover;
     width:300px;
@@ -1324,8 +1324,8 @@ pre .id {
     color:#fff;
     opacity:.8
 }
-    
-    
+
+
 
 
 
@@ -2243,7 +2243,7 @@ a.share-outer:hover::after {
     transition: all .2s ease-in
 }
 
-    
+
 
 .article img {
     max-width: 100%
