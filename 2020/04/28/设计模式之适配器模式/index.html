@@ -9,18 +9,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>设计模式之适配器模式 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="适配器模式适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。这种模式涉及到一个单一的类，该类负责加入独立的或不兼容的接口功能。将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。 适配器模式分为三类：类适配器，对象适配器，接口适配器（缺省适配器） 类">
+  <meta name="description" content="适配器模式适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。这种模式涉及到一个单一的类，该类负责加入独立的或不兼容的接口功能。将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式之适配器模式">
 <meta property="og:url" content="http://yoursite.com/2020/04/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="适配器模式适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。这种模式涉及到一个单一的类，该类负责加入独立的或不兼容的接口功能。将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。 适配器模式分为三类：类适配器，对象适配器，接口适配器（缺省适配器） 类">
+<meta property="og:description" content="适配器模式适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。这种模式涉及到一个单一的类，该类负责加入独立的或不兼容的接口功能。将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200428093852834.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg4MDc5OQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200428094616635.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg4MDc5OQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020042809554531.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg4MDc5OQ==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-04-28T02:03:44.000Z">
-<meta property="article:modified_time" content="2020-04-28T02:03:58.475Z">
+<meta property="article:modified_time" content="2020-04-28T02:04:57.778Z">
 <meta property="article:author" content="张天旭">
 <meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
@@ -220,6 +220,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="适配器模式"><a href="#适配器模式" class="headerlink" title="适配器模式"></a>适配器模式</h1><p>适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。<br>这种模式涉及到一个单一的类，该类负责加入独立的或不兼容的接口功能。<br>将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。</p>
+<a id="more"></a>
+
 <p><strong>适配器模式分为三类：类适配器，对象适配器，接口适配器（缺省适配器）</strong></p>
 <h3 id="类适配器"><a href="#类适配器" class="headerlink" title="类适配器"></a>类适配器</h3><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>在现实生活中，我们都需要给手机充电以保证正常的通信需求和工作需要，那么都知道国内的标准电压是220V，但是大多数手机的电压是5V，这么一来要给手机充电则需要中间有一个转换器来完成对22V电压和5V电压的装换。</p>
 <p>实例：现在我们就以手机充电的例子来进行类适配器模式的理解。</p>
