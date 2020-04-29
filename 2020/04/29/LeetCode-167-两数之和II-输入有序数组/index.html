@@ -7,25 +7,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>LeetCode--144.环形链表 | Hexo</title>
+  <title>LeetCode--167.两数之和II --输入有序数组 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="环形链表给定一个链表，判断链表中是否有环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。">
+  <meta name="description" content="两数之和II给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。 函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode--144.环形链表">
-<meta property="og:url" content="http://yoursite.com/2020/04/23/LeetCode-144-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/index.html">
+<meta property="og:title" content="LeetCode--167.两数之和II --输入有序数组">
+<meta property="og:url" content="http://yoursite.com/2020/04/29/LeetCode-167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8CII-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="环形链表给定一个链表，判断链表中是否有环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。">
+<meta property="og:description" content="两数之和II给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。 函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200423153124609.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200423153222504.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200423153259521.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200423153903854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg4MDc5OQ==,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2020-04-23T07:54:14.000Z">
-<meta property="article:modified_time" content="2020-04-23T07:55:51.480Z">
+<meta property="article:published_time" content="2020-04-29T07:30:31.000Z">
+<meta property="article:modified_time" content="2020-04-29T07:32:32.412Z">
 <meta property="article:author" content="张天旭">
 <meta property="article:tag" content="LeetCode">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200423153124609.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -181,14 +176,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-LeetCode-144-环形链表" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-LeetCode-167-两数之和II-输入有序数组" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      LeetCode--144.环形链表
+      LeetCode--167.两数之和II --输入有序数组
     </h1>
   
 
@@ -206,49 +201,43 @@
   >次
 </span>
 
-<a href="/2020/04/23/LeetCode-144-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/" class="archive-article-date">
-  <time datetime="2020-04-23T07:54:14.000Z" itemprop="datePublished"
-    ><i class="icon-calendar icon"></i>2020-04-23</time
+<a href="/2020/04/29/LeetCode-167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8CII-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/" class="archive-article-date">
+  <time datetime="2020-04-29T07:30:31.000Z" itemprop="datePublished"
+    ><i class="icon-calendar icon"></i>2020-04-29</time
   >
 </a>
 
         
         <div align="center" class="post-count">
-          字数：1k字 | 预计阅读时长：3分钟
+          字数：747字 | 预计阅读时长：3分钟
         </div>
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="环形链表"><a href="#环形链表" class="headerlink" title="环形链表"></a>环形链表</h1><p>给定一个链表，判断链表中是否有环。</p>
-<p>为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。</p>
+        <h1 id="两数之和II"><a href="#两数之和II" class="headerlink" title="两数之和II"></a>两数之和II</h1><p>给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。</p>
+<p>函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。</p>
 <a id="more"></a>
 
-<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：head&#x3D; [3,2,0,-4] ,pos &#x3D; 1</span><br><span class="line">输出：true</span><br><span class="line">解释：链表中有一个环，其尾部连接到第二个节点。</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200423153124609.png" alt="在这里插入图片描述"></p>
-<h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：head &#x3D; [1,2], pos &#x3D; 0</span><br><span class="line">输出：true</span><br><span class="line">解释：链表中有一个环，其尾部连接到第一个节点。</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200423153222504.png" alt="在这里插入图片描述"></p>
-<h3 id="示例3"><a href="#示例3" class="headerlink" title="示例3"></a>示例3</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：head &#x3D; [1], pos &#x3D; -1</span><br><span class="line">输出：false</span><br><span class="line">解释：链表中没有环。</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200423153259521.png" alt="在这里插入图片描述"></p>
-<h2 id="所需知识"><a href="#所需知识" class="headerlink" title="所需知识"></a>所需知识</h2><h4 id="何为链表："><a href="#何为链表：" class="headerlink" title="何为链表："></a>何为链表：</h4><p>通俗的理解就是每个节点由两部分组成，一部分为值，也就是数据，另一部分为指向下一节点的地址。通过指向下一节点的地址将数据串联起来。</p>
-<h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><p>链表实际上是线性表的链式存储结构，与数组不同的是，它是用一组任意的存储单元来存储线性表中的数据，存储单元不一定是连续的，且链表的长度不是固定的，链表数据的这一特点使其可以非常的方便地实现节点的插入和删除操作</p>
-<p>链表的每个元素称为一个节点，每个节点都可以存储在内存中的不同的位置，为了表示每个元素与后继元素的逻辑关系，以便构成“一个节点链着一个节点”的链式存储结构</p>
-<p>除了存储元素本身的信息外，还要存储其直接后继信息，因此，每个节点都包含两个部分，第一部分称为链表的数据区域，用于存储元素本身的数据信息，这里用val表示，</p>
-<p>它不局限于一个成员数据，也可是多个成员数据，第二部分是一个结构体指针，称为链表的指针域，用于存储其直接后继的节点信息，这里用next表示</p>
-<p>next的值实际上就是下一个节点的地址，当前节点为末节点时，next的值设为空指针</p>
-<p><img src="https://img-blog.csdnimg.cn/20200423153903854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg4MDc5OQ==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ListNode</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> val;</span><br><span class="line">    ListNode next;</span><br><span class="line"></span><br><span class="line">    ListNode(<span class="keyword">int</span> x) &#123;</span><br><span class="line">        val = x;</span><br><span class="line">        next = <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>说明：</strong></p>
+<ul>
+<li>返回的下标值（index1 和 index2）不是从零开始的。</li>
+<li>你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。</li>
+</ul>
+<p><strong>示例</strong></p>
+<pre><code>输入: numbers = [2, 7, 11, 15], target = 9
+输出: [1,2]
+解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。</code></pre><h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p><strong>暴力法：</strong> 最简单易理解的一种方法，通过上冲双重for循环遍历出两个相加符合要求的数字。</p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 暴力法  时间复杂度O（n^2）</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numbers.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; numbers.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (numbers[i] + numbers[j] == target) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;i + <span class="number">1</span>, j + <span class="number">1</span>&#125;;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">1</span>, -<span class="number">1</span>&#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><p>每次循环比遍历一个节点时，将节点存储在一个set集合中，在遍历每个节点之前，判断set集合中是否已存在这个节点数据，若已存在，返回true，若循环完毕没有返回，则表示不是循环节点，返回false。</p>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasCycle</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 每一次遍历一个节点    就用容器承装  下一次判断此节点是否在容器中</span></span><br><span class="line">        Set&lt;ListNode&gt; set = <span class="keyword">new</span> HashSet&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 直到head不为空</span></span><br><span class="line">        <span class="keyword">while</span> (head != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">// 如果set中存在这个head则证明这是一个环形链表</span></span><br><span class="line">            <span class="keyword">if</span> (set.contains(head)) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            set.add(head);</span><br><span class="line">            head = head.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h4><p><strong>反推法：</strong> 空间换时间的一种方法，借助一个容器来存储。创建一个HashMap集合，将数组内的元素在遍历的同时存入集合，存入之前先判断集合内是否存在和当前元素相加符合要求的数据，如果符合则返回相应的下标（注意这里的下标要+1），不符合则接着循环，当循环结束时如果没有符合条件的则返回[-1,-1]。</p>
+<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 空间换时间    时间复杂度O（n）</span></span><br><span class="line">    <span class="comment">// 倒推法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum1(<span class="keyword">int</span>[] numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numbers.length; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> needNum = target - numbers[i];</span><br><span class="line">            <span class="keyword">if</span> (map.containsKey(needNum)) &#123;</span><br><span class="line">                <span class="keyword">int</span> one = i + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">int</span> two = map.get(needNum) + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;one&gt;two?two:one,one&gt;two?one:two&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(numbers[i], i);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">1</span>, -<span class="number">1</span>&#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="方法二（优化空间）"><a href="#方法二（优化空间）" class="headerlink" title="方法二（优化空间）"></a>方法二（优化空间）</h3><h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h4><p>快慢指针：快慢指针中的快慢指的是移动的步长，即每次向前移动速度的快慢。例如可以让快指针每次沿链表向前移动2，慢指针每次向前移动1次。</p>
-<p>这只两个指针，一个快指针（每次向下移动两个节点），一个慢指针（每次向下移动一个节点），如果快慢指针相遇，则说明是环形链表，如果不相遇则说明不是环形链表。</p>
-<p>例如：50米短跑比赛，赛道是一个直线型，则选手之间不会发生相遇，但4000米比赛，场地是原型的（假设400米一圈），那么当跑得快的选手超过跑的慢的选手一圈时，两人则会相遇。</p>
-<h4 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasCycle2</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span> || head.next == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ListNode slow = head;</span><br><span class="line">        ListNode fast = head.next;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (fast != slow) &#123;</span><br><span class="line">            <span class="keyword">if</span> (fast == <span class="keyword">null</span> || fast.next == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="comment">// fast==null 说明直接到了空节点   fast.next==null 说明到了最后一个几点</span></span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 声明快慢指针</span></span><br><span class="line">            slow = slow.next;</span><br><span class="line">            fast = fast.next.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h3><h4 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h4><p><strong>双指针法：</strong><br>就本质来说数组的遍历就是通过指针的移动来一次访问每个数组元素。因为题目给出的条件是数组已经是经过排序的，我们可以定义两个指针，一个从前向后，一个从后向前，如果两个指针所指向的元素相加等于目标值，则返回下标（+1的），如果大于目标值则将后面的指针向前移动，如果小于目标值则将前面的指针向后移动，如果当后面的指针小于等于前面的指针时，则退出循环，说明没有符合没有符合要求的数据元素。</p>
+<h4 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 进一步优化空间复杂度</span></span><br><span class="line">    <span class="comment">// 双指针法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum2(<span class="keyword">int</span>[] numbers, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span> head = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> end = numbers.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (head &lt; end) &#123;</span><br><span class="line">            <span class="keyword">if</span> (numbers[head] + numbers[end] == target) &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;head + <span class="number">1</span>, end + <span class="number">1</span>&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (numbers[head] + numbers[end] &gt; target) &#123;</span><br><span class="line">                end--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (numbers[head] + numbers[end] &lt; target) &#123;</span><br><span class="line">                head++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">1</span>, -<span class="number">1</span>&#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -318,7 +307,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/23/LeetCode-144-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/29/LeetCode-167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8CII-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,18 +321,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/24/LeetCode-160-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          LeetCode--160.相交链表
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/04/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">设计模式之原型模式</div>
+    <a href="/2020/04/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">设计模式之适配器模式</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -370,7 +350,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环形链表"><span class="toc-number">1.</span> <span class="toc-text">环形链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#示例1"><span class="toc-number">1.0.1.</span> <span class="toc-text">示例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#示例2"><span class="toc-number">1.0.2.</span> <span class="toc-text">示例2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#示例3"><span class="toc-number">1.0.3.</span> <span class="toc-text">示例3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#所需知识"><span class="toc-number">1.1.</span> <span class="toc-text">所需知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#何为链表："><span class="toc-number">1.1.0.1.</span> <span class="toc-text">何为链表：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#基本概念"><span class="toc-number">1.1.0.2.</span> <span class="toc-text">基本概念</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法一"><span class="toc-number">1.1.1.</span> <span class="toc-text">方法一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#思路"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法二（优化空间）"><span class="toc-number">1.1.2.</span> <span class="toc-text">方法二（优化空间）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#思路-1"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码-1"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">代码</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#两数之和II"><span class="toc-number">1.</span> <span class="toc-text">两数之和II</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法一"><span class="toc-number">1.0.1.</span> <span class="toc-text">方法一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#思路"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法二"><span class="toc-number">1.0.2.</span> <span class="toc-text">方法二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#思路-1"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码-1"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法三"><span class="toc-number">1.0.3.</span> <span class="toc-text">方法三</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#思路-2"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码-2"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">代码</span></a></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -387,8 +367,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2020/04/23/LeetCode-144-%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8/", 
-    sourceId: "LeetCode-144-环形链表",
+    url: "http://yoursite.com/2020/04/29/LeetCode-167-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8CII-%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/", 
+    sourceId: "LeetCode-167-两数之和II-输入有序数组",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
